@@ -21,5 +21,6 @@ public class TitleGlue {
     @Then("validate the title '(.*)'")
     public void validateTitle(String title){
         Assert.assertEquals(title, StepHooks.driver.getTitle());
+        System.out.println("Website title verified successfully");
     }
 }
